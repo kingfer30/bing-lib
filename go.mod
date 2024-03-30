@@ -1,4 +1,4 @@
-module github.com/Harry-zklcdc/bing-lib
+module github.com/kingfer30/bing-lib
 
 go 1.21.4
 

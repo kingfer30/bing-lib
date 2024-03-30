@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/Harry-zklcdc/bing-lib/lib/request"
+	"github.com/kingfer30/bing-lib/lib/request"
 )
 
 func Bypass(bypassServer, cookie, iframeid, IG, convId, rid, T string) (passResp PassResponseStruct, status int, err error) {

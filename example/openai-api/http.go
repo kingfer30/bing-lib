@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
-	binglib "github.com/Harry-zklcdc/bing-lib"
-	"github.com/Harry-zklcdc/bing-lib/lib/hex"
+	binglib "github.com/kingfer30/bing-lib"
+	"github.com/kingfer30/bing-lib/lib/hex"
 )
 
 var (

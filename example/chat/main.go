@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	binglib "github.com/Harry-zklcdc/bing-lib"
+	binglib "github.com/kingfer30/bing-lib"
 )
 
 var cookie = os.Getenv("COOKIE")

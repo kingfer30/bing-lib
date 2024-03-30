@@ -4,16 +4,17 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"log"
 	"mime/multipart"
 	"net/http"
 	"net/url"
 	"strconv"
 	"strings"
 
-	"github.com/Harry-zklcdc/bing-lib/lib/aes"
-	"github.com/Harry-zklcdc/bing-lib/lib/hex"
-	"github.com/Harry-zklcdc/bing-lib/lib/request"
 	"github.com/gorilla/websocket"
+	"github.com/kingfer30/bing-lib/lib/aes"
+	"github.com/kingfer30/bing-lib/lib/hex"
+	"github.com/kingfer30/bing-lib/lib/request"
 )
 
 const (
@@ -169,6 +170,7 @@ func (chat *Chat) NewConversation() error {
 	var resp ChatReq
 	err := json.Unmarshal(c.GetBody(), &resp)
 	if err != nil {
+		log.Println(err.Error())
 		return err
 	}
 	resp.ConversationSignature = c.GetHeader("X-Sydney-Conversationsignature")

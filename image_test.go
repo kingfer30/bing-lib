@@ -3,7 +3,7 @@ package binglib_test
 import (
 	"testing"
 
-	binglib "github.com/Harry-zklcdc/bing-lib"
+	binglib "github.com/kingfer30/bing-lib"
 )
 
 const cookieImg = "Complete cookie"
