@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"log"
 	"mime/multipart"
 	"net/http"
 	"net/url"
@@ -170,7 +169,6 @@ func (chat *Chat) NewConversation() error {
 	var resp ChatReq
 	err := json.Unmarshal(c.GetBody(), &resp)
 	if err != nil {
-		log.Println(err.Error())
 		return err
 	}
 	resp.ConversationSignature = c.GetHeader("X-Sydney-Conversationsignature")
